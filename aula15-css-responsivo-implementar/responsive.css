@@ -1,0 +1,72 @@
+@media(max-width: 1024px){
+    #contato .container .ontato-grid{
+        flex-direction: column;
+    }
+
+    #contato .container .contato-grid .contato-form{
+        width: 100%;
+    }
+
+@media(max-width: 827px){
+    .menu h1{
+        font-size: 1.1em;
+    }
+ 
+    .menu nav ul{
+        gap: 2px;
+    }
+
+@media(max-width: 768px){
+    .menu, .menu nav ul  {
+        flex-direction: column;
+       
+    }
+
+    .mennu{
+        gap:20px;
+    }
+
+    .menu nav ul{
+        gap: 16px;
+    }
+}
+
+    .hero-content h1 {
+        font-size: 1.4em;
+    }
+    .hero-content p {
+        font-size: 1.0em;
+    }
+
+    header{
+        position: static;
+    }
+
+    .mvv-grid {
+        flex-direction: column;
+    }
+
+    .mvv-grid h3, .mvv-grid p {
+         font-size: 1.1em;
+    }
+
+
+
+@media(max-width: 480px){
+    .mvv-grid h3{
+        font-size: 1.4em;
+    }
+
+    .mvv-grid p{
+        font-size: 0.9em;
+    }
+
+    footer .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer .container > div {
+        margin-bottom: 24px;
+    }

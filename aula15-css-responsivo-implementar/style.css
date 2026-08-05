@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #1a2a3a;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+/* HEADER */
+header {
+    background-color: rgba(27, 67, 50, 0.75);
+    backdrop-filter: blur(10px);
+    padding: 16px 32px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.menu h1 {
+    color: white;
+    font-size: 20px;
+}
+
+.menu nav ul {
+    list-style: none;
+    display: flex;
+    gap: 8px;
+}
+
+.menu nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 14px;
+    border-radius: 4px;
+}
+
+.menu nav ul li a:hover {
+    background-color: #40916C;
+    transition: 0.3s ease-in;
+}
+
+.btn-entrar {
+    background-color: #D1495B;
+}
+
+.btn-entrar:hover{
+    background-color: #30638E !important;
+}
+
+/* HERO */
+#hero {
+    position: relative;
+    height: calc(100vh - 56px);
+    overflow: hidden;
+}
+
+#hero video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.hero-content h2 {
+    font-size: 48px;
+    margin-bottom: 16px;
+    text-shadow: 2px 2px 8px black;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 32px;
+    text-shadow: 1px 1px 4px black;
+}
+
+.btn-hero {
+    background-color: #40916C;
+    color: white;
+    text-decoration: none;
+    padding: 14px 32px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btn-hero:hover {
+    background-color: #2D6A4F;
+}
+
+/* MISSÃO, VISÃO E VALORES */
+#missao {
+    background-color: white;
+    padding: 80px 32px;
+}
+
+#missao h2 {
+    font-size: 32px;
+    color: #1B4332;
+    text-align: center;
+    margin-bottom: 48px;
+    border-bottom: 3px solid #40916C;
+    padding-bottom: 16px;
+}
+
+.mvv-grid {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+}
+
+.mvv-card {
+    flex: 1;
+    background-color: #f5f7fa;
+    border-radius: 10px;
+    padding: 32px 24px;
+    border-top: 4px solid #40916C;
+    text-align: center;
+}
+
+.mvv-card h3 {
+    font-size: 18px;
+    color: #1B4332;
+    margin-bottom: 16px;
+}
+
+.mvv-card p {
+    font-size: 14px;
+    color: #6B7280;
+    line-height: 1.7;
+}
+
+/* SERVIÇOS */
+#servicos {
+    background-color: #f5f7fa;
+    padding: 80px 32px;
+}
+
+#servicos h2 {
+    font-size: 32px;
+    color: #1B4332;
+    text-align: center;
+    margin-bottom: 48px;
+    border-bottom: 3px solid #40916C;
+    padding-bottom: 16px;
+}
+
+.servicos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+}
+
+.servico-card {
+    flex: 1;
+    min-width: 280px;
+    max-width: 380px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.servico-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.servico-card h3 {
+    font-size: 16px;
+    color: #1B4332;
+    padding: 16px 20px 8px;
+}
+
+.servico-card p {
+    font-size: 13px;
+    color: #6B7280;
+    padding: 0 20px 20px;
+    line-height: 1.6;
+}
+
+/* CONTATO */
+#contato {
+    background-color: white;
+    padding: 80px 32px;
+}
+
+#contato h2 {
+    font-size: 32px;
+    color: #1B4332;
+    text-align: center;
+    margin-bottom: 48px;
+    border-bottom: 3px solid #40916C;
+    padding-bottom: 16px;
+}
+
+.contato-grid {
+    display: flex;
+    gap: 48px;
+    align-items: flex-start;
+}
+
+.contato-info {
+    flex: 1;
+}
+
+.contato-info h3 {
+    font-size: 20px;
+    color: #1B4332;
+    margin-bottom: 16px;
+}
+
+.contato-info p {
+    font-size: 14px;
+    color: #6B7280;
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.btn-whatsapp {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.contato-form {
+    flex: 1;
+}
+
+.contato-form fieldset {
+    border: 1px solid #d0dae8;
+    border-radius: 10px;
+    padding: 24px;
+}
+
+.contato-form legend {
+    font-size: 13px;
+    font-weight: bold;
+    color: #1B4332;
+    padding: 0 8px;
+    text-transform: uppercase;
+}
+
+.contato-form label {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-top: 14px;
+    margin-bottom: 5px;
+}
+
+.contato-form input,
+.contato-form textarea {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #d0dae8;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    color: #1a2a3a;
+}
+
+.contato-form textarea {
+    resize: vertical;
+}
+
+.contato-form button {
+    margin-top: 16px;
+    width: 100%;
+    padding: 12px;
+    background-color: #1B4332;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.contato-form button:hover {
+    background-color: #40916C;
+}
+
+/* FOOTER */
+footer {
+    background-color: #1B4332;
+    padding: 48px 32px 0;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.footer-brand {
+    flex: 2;
+}
+
+.footer-brand h2 {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.footer-brand p {
+    color: #B7E4C7;
+    font-size: 13px;
+}
+
+.footer-links,
+.footer-social {
+    flex: 1;
+}
+
+.footer-links h3,
+.footer-social h3 {
+    color: white;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+}
+
+.footer-links ul,
+.footer-social ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-links ul li a,
+.footer-social ul li a {
+    color: #B7E4C7;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-links ul li a:hover,
+.footer-social ul li a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    margin-top: 40px;
+    border-top: 1px solid #2D6A4F;
+    padding: 16px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #B7E4C7;
+    font-size: 12px;
+}
